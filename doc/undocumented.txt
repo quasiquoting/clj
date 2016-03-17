@@ -1,0 +1,21 @@
+== clj-seq ==
+repeat/2
+reduce/3
+reduce/2
+get-in-kv/3
+get-in-map/2
+get-in-dict/2
+get-in-proplist/2
+get-in-list/2
+interleave/2
+split-by/2
+split-at/2
+take/3
+take/2
+drop/2
+range/2
+range/1
+range/0
+next/3
+next/2
+next/1
