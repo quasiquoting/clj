@@ -1,24 +1,31 @@
-;;;; Various macros and functions that relate to sequences
-;;;;
 (defmodule clj-seq
+  (doc "Various macros and functions related to sequences.")
   (export all))
 
 (include-lib "clj/include/predicates.lfe")
 
-;; List sequence wrapper functions
-;;
-;; Usage:
-;;
-;; > (seq 10)
-;; (1 2 3 4 5 6 7 8 9 10)
-;;
 (defun seq (end)
+  "Equivalent to `(lists:seq 1 end)`.
+
+
+#### Usage
+
+```commonlisp
+> (seq 10)
+(1 2 3 4 5 6 7 8 9 10)
+```
+
+See also: [[seq/2]] and [[seq/3]]"
   (lists:seq 1 end))
 
 (defun seq (start end)
+  "Equivalent to `lists:seq/2`.
+See also: [[seq/1]] and [[seq/3]]"
   (lists:seq start end))
 
 (defun seq (start end step)
+  "Equivalent to `lists:seq/3`.
+See also: [[seq/1]] and [[seq/2]]"
   (lists:seq start end step))
 
 ;; Infinite series functions
