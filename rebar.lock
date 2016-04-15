@@ -1,8 +1,2 @@
-[{<<"kla">>,
-  {git,"git://github.com/lfex/kla.git",
-       {ref,"a8afc4f673809d89b6c4a374b972f54ef6b39bde"}},
-  0},
- {<<"lfe">>,
-  {git,"git://github.com/rvirding/lfe.git",
-       {ref,"b84e9a8a1db6ffdd0cfe593fc8ad440ef72a5511"}},
-  0}].
+[{<<"kla">>,{pkg,<<"kla">>,<<"0.7.0">>},0},
+ {<<"lfe">>,{pkg,<<"lfe">>,<<"1.0.2">>},0}].
